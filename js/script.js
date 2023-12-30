@@ -14,6 +14,10 @@ modalX.addEventListener("click", function () {
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
-    console.log(e.key);
+    /*console.log(e.key);*/
+    if (modal.classList.contains("show-modal")) {
+      modal.classList.remove("show-modal");
+      button.innerText = "Who's got this?";
+    }
   }
 });
